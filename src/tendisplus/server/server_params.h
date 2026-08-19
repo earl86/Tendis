@@ -1,4 +1,4 @@
-// Copyright (C) 2020 THL A29 Limited, a Tencent company.  All rights reserved.
+// Copyright (C) 2020 Tencent.  All rights reserved.
 // Please refer to the license text that comes with this tendis open source
 // project for additional information.
 
@@ -625,6 +625,8 @@ class ServerParams {
   bool clusterCheckDiskRead = false;
 
   uint64_t tbitmapFragmentSize = 1024;
+
+  bool protectedMode = true;
 
   int64_t luaTimeLimit = 5000;                   // ms
   int64_t luaStateMaxIdleTime = 60 * 60 * 1000;  // ms

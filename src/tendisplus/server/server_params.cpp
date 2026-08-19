@@ -1,4 +1,4 @@
-// Copyright (C) 2020 THL A29 Limited, a Tencent company.  All rights reserved.
+// Copyright (C) 2020 Tencent.  All rights reserved.
 // Please refer to the license text that comes with this tendis open source
 // project for additional information.
 
@@ -586,6 +586,8 @@ ServerParams::ServerParams() {
   REGISTER_VARS_DIFF_NAME_DYNAMIC("force-recovery", forceRecovery);
 
   REGISTER_VARS_DIFF_NAME_DYNAMIC("tbitmap-fragment-size", tbitmapFragmentSize);
+
+  REGISTER_VARS_DIFF_NAME_DYNAMIC("protected-mode", protectedMode);
 
   REGISTER_VARS_DIFF_NAME_DYNAMIC("lua-time-limit", luaTimeLimit);
   REGISTER_VARS(luaStateMaxIdleTime);
